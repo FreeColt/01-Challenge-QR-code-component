@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+    
+    *{
+      margin:0px;
+      padding:0px;
+      font-family: 'Outfit', sans-serif;
+      Font-size: 15px;
+      overflow: hidden;
+    }
+    #viewport{
+      width:100vw;
+      height:100vh;
+      background-color:hsl(212, 45%, 89%); 
+    }
+    .card-view{
+      width:321px;
+      height:498px;
+      background-color:hsl(0, 0%, 100%);
+      position: relative; /*Eu sei que tem um jeito melhor de se fazer essa centralização, porém, eu queria entender as própriedade vh e vw*/
+      top:18.875vh; left:38.85vw;
+      display: flex;
+      justify-content:center;
+      border-radius: 15px;
+      flex-wrap: wrap;
+    }
+    .card-of-qr-code{
+      width:290px;
+      height:290px;
+      margin-top: 17px;
+      border-radius: 10px;
+    }
+    h1{
+      font-size: 25px;
+      text-align: center;
+      color: hsl(218, 44%, 22%); 
+      text-transform: capitalize;
+    }
+    p{
+      text-align: center;
+      text-transform: capitalize;
+      color:hsl(220, 15%, 55%);
+      margin: 0px 22px;
+    }
+
+    @media screen and (max-width:1024px){
+      .card-view{
+        position: relative;
+        left:34.32vw;
+      }
+    }
+    @media screen and (max-width:768px){
+      .card-view{
+        position: relative;
+        left:29.10vw;
+      }
+    }
+    @media screen and (max-width:425px){
+      .card-view{
+        position: relative;
+        left:12.23vw;
+      }
+    }
+    @media screen and (max-width:375px){
+      .card-view{
+        position: relative;
+        left:8.41vw;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <div id="viewport">
+    <div class="card-view">
+      <img class="card-of-qr-code"src="/01-Challenge-QR-code-component/images/image-qr-code.png" alt="QR CODE">
+      <h1>improve your front-end skills by building projects</h1>
+      <p>scan the qr code to visit fronted mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+</body>
+</html>
